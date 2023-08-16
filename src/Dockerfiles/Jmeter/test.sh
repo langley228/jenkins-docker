@@ -1,0 +1,1 @@
+sh /opt/data/test-plan/mongo/test.sh
