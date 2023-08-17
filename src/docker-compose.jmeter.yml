@@ -11,7 +11,8 @@ services:
       - sh
       - -c
       - |
-          ./test.sh
+          ./test.sh /
+          /bin/sh
     stdin_open: true #for docker run -i
     tty: true # for docker run -t
     volumes:
