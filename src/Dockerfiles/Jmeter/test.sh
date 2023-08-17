@@ -1,2 +1,2 @@
-ls
-sh ./test-plan/mongo/test.sh
+ls ./
+# sh ./test-plan/mongo/test.sh
