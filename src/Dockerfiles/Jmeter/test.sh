@@ -1,1 +1,1 @@
-sh test-plan/mongo/test.sh
+sh /opt/data/test-plan/mongo/test.sh
