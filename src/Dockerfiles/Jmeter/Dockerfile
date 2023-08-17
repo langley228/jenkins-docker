@@ -28,6 +28,7 @@ FROM build AS jmeter
 # Set global PATH such that "jmeter" command is found
 ENV PATH $PATH:$JMETER_BIN
 
+RUN ls
 COPY ./test-plan /opt/data/test-plan
 # Entrypoint has same signature as "jmeter" command
 COPY test.sh /opt/data
