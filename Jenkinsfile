@@ -3,10 +3,15 @@ def agentLabel
 agentLabel = "agent" + BRANCH_NAME
 
 pipeline {
-    agent {        
-        node(agentLabel){
-            echo "Hello world!"
-            sh "sleep 20"
+    agent { label agentLabel }     
+    stages {
+        stage('Example') {
+            steps {
+                script {
+                    def output = sh(returnStdout: true, script: 'pwd')
+                    echo "Output: ${output}"
+                }
+            }
         }
     }
 }
