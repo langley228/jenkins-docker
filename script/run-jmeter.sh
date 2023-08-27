@@ -8,6 +8,6 @@ docker compose -f docker-compose.jmeter.env.yml -p $COMPOSE_NAME up -d --build m
     # 不能背景執行, 否則報表出不來
 docker compose -f docker-compose.jmeter.yml -p $COMPOSE_NAME up --build
     # 從容器裡面複製測試結果
-docker cp $COMPOSE_NAME-jmeter-1:/opt/data/result ./../../$COMPOSE_NAME
+docker cp $COMPOSE_NAME-jmeter-1:/opt/data/result ./$COMPOSE_NAME
     # 執行完畢 移除容器及image ( --rmi 避免占空間還要自行清除 image )
 docker compose -f docker-compose.jmeter.env.yml -f docker-compose.jmeter.yml -p $COMPOSE_NAME down -v --rmi all
