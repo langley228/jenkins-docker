@@ -2,7 +2,7 @@ version: "3.7"
 
 services:
   jmeter:
-    image: jmeter:5.3
+    image: jmeter-demo/jmeter:5.3
     build:
       context: ./Dockerfiles/Jmeter/
       dockerfile: Dockerfile

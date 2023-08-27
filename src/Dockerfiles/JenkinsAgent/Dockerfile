@@ -17,5 +17,5 @@ RUN apt-get update && \
    apt-get update && \
    apt-get -y install docker-ce
 
-RUN mkdir /opt/data
-COPY testCase.js /opt/data
+# RUN mkdir /opt/data
+# COPY testCase.js /opt/data

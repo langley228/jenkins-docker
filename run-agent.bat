@@ -1,1 +1,2 @@
-docker run --rm -it --privileged --name agent --user root -v ./src:/opt/data/ -v /var/run/docker.sock:/var/run/docker.sock -v /usr/local/bin/docker:/usr/local/bin/docker --init langley228/jenkins-agent -url http://192.168.72.187:28080 1246bda5c2517ad0d09f46306473abd70e0f763ac583238b54d38e2293f491d0 kk
+call ./script/env.bat
+call ./script/agent.bat
